@@ -1,0 +1,15 @@
+MPG Regression
+
+Based on the multiple linear regression model, lm(mpg ~ length + weight + clearance + angle, data=mpg_data), the variables that provided a non-random amount of variance to the mpg values in the dataset include vehicle length and ground clearance. The slope of the linear model is not considered to be zero because the p-value is less than 0.05. This linear model does predict the mpg of MechaCar prototypes effectively since the r-squared is relatively high, with a value of 0.7.
+
+Suspension Coil Summary
+
+From the summary statistics of suspension coil PSI, the mean was 1499, the median was 1500, the standard deviation was 7.89, and the variance was 62.3. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch. The current manufacturing data meets this design specification because the variance is 62.3 pounds per inch, which is less than 100.
+
+Suspension Coil T-Test
+
+Because we are comparing the suspension coil PSI data to population data, I used the one-sided T-test to determine the similarity of the means. From the t-test, I conclude that since the p-value, 0.06, is above the significance level of 0.05, there is not sufficient evidence to reject the null hypothesis; hence, the two means are statistically similar.
+
+Design Your Own Study
+
+To compare the performance of the MechaCar prototype vehicle to other vehicles currently on the market, consider the following study, which will quantitively assess how the MechaCar outperforms the competition. When researching the market, consumers often rely on cost, safety, miles per gallon, maintenance, and whether the car relies on gas, is hybrid, or electric as metrics to consider. Cost is important to consumers because it drives whether the consumer will even consider the car if the price is within purchasing range. Safety tests are important to consumers because they reveal the strength of the car's build when considering potential future accidents. Miles per gallon is important to consumers because it reveals the fuel efficiency and monthly cost of upkeep for the car. Maintenance also drives consumer decisions through annual upkeep costs. Lastly, environmentally-concious consumers also care about what fuels the car because cars affect consumer carbon footprints, as well as cost. Hence, based on the metrics, the study will ask the following question: Does the MechaCar prototype have a lower cost score, higher safety score, lower mpg score, lower maintenance score, and higher environmental score copmared to competing vehicles? The null hypothesis would be: The scores between the MechaCar prototype and other vehicles are the same. The alternative hypothesis would be: The scares between the MechaCar prototype and other vehicles are different. A statistical test that could be used for the metrics in the hypothesis includes multiple linear regression since each metric is an independent variable driving the dependent variable - the likelihood that a consumer will purchase the MechaCar prototype. The data that should be collected in the study are the metrics mentioned above.

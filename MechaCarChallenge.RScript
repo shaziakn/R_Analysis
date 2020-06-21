@@ -1,0 +1,15 @@
+#Read MechaCar_mpg CSV file
+mpg_data <- read.csv(file='MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+
+#Conduct multiple linear regression test with summary to get p value
+summary(lm(mpg ~ length + weight + clearance + angle, data=mpg_data))
+
+#Read Suspension_Coil CSV file
+suspension_data <- read.csv(file='Suspension_Coil.csv', check.names=F, stringsAsFactors = F)
+
+#Load pastecs library to use summary statistics function
+library(pastecs)
+stat.desc(suspension_data$PSI)
+
+#Conduct one-sided t-test
+t.test(suspension_data$PSI,mu=1500)
